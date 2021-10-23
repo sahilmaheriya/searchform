@@ -7,11 +7,19 @@
     outline: none;
 }
 
-body{
+.search{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.result .container{
+    margin-top: 2rem;
+}
+
+.result .container .post{
+    width: 30rem;
 }
 
 .container{
@@ -76,8 +84,17 @@ body{
     }
 }
 
+@media screen and (max-width:700px){
+    .result .container .post{
+        width: 20rem;
+    }
+}
+
 @media screen and (max-width:450px){
     .box{
         width: 90%;
+    }
+    .result .container .post{
+        width: 18rem;
     }
 }
