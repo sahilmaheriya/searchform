@@ -22,6 +22,8 @@ body{
   overflow-x: hidden;
 }
 
+
+
 /* header section start here  */
 
 header{
@@ -454,10 +456,12 @@ footer .footer-container .footer-top .newsletter p{
 /* ---------------------- loader end here --------------------------- */
 
 .search{
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin: 17rem 0;
 }
 
 .result .container{
@@ -522,6 +526,56 @@ footer .footer-container .footer-top .newsletter p{
 
 .box input:focus{
     box-shadow: none;
+}
+
+.search-post .box-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-post .box-container .box{
+  border: .1rem solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 1.3rem;
+  padding: 1rem;
+  width: 45%;
+}
+
+.search-post .box-container .box:hover{
+  background: rgba(163, 163, 163, 0.1);
+}
+
+.search-post .box-container .box .datetime{
+  color: rgb(145, 145, 145);
+}
+
+.search-post .box-container .box-heading div:first-child{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-post .box-container .box-heading div:first-child img{
+  margin: 0 .5rem;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 5rem;
+}
+
+.search-post .box-container .box-heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.search-post .box-container .box-heading img{
+  width: 3.5rem;
+  height: auto;
+  transform: rotate(-30deg);
 }
 
 
@@ -669,6 +723,16 @@ footer .footer-container .footer-top .newsletter p{
   header nav.nav-toggle{
     left: 0;
   }
+  .search-post .box-container .box{
+    border: .1rem solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 1.6rem;
+    padding: 1rem;
+    width: 60%;
+  }
+    
 }
 
 @media screen and (max-width:450px){
@@ -687,6 +751,16 @@ footer .footer-container .footer-top .newsletter p{
     border-radius: 2rem;
     padding: 0 1rem;
   }
+  .search-post .box-container .box{
+    border: .1rem solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 1.6rem;
+    padding: 1rem;
+    width: 80%;
+  }
+
 }
 
 
